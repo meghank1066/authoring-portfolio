@@ -12,42 +12,47 @@
   <header class="brand">
     <img class="logo" src="images/ladybug.png" alt="">
     <a class="title" href="index.html">Meghan Keightley</a>
-    <p class="subtitle">MSc Interactive Digital Media @ Trinity</p>
+    <p class="subtitle">MSc Interactive Digital Media & Computer Science @ Trinity</p>
     <p class="bio"><3</p>
   </header>
 
   <nav>
     <p class="sidebar-label">Explore</p>
     <ul class="nav-links">
-      <li><a href="index.html" class="is-active"><span class="num">01.</span> The Meadow <span class="arrow">→</span></a></li>
+      <li><a hrexf="index.html" class="is-active"><span class="num">01.</span> The Meadow <span class="arrow">→</span></a></li>
       <li><a href="about.html"><span class="num">02.</span> About Me <span class="arrow">→</span></a></li>
-      <li><a href="playground.html"><span class="num">03.</span> Bug Report <span class="arrow">→</span></a></li>
+      <li><a href="playground.html"><span class="num">03.</span> The Bug Log <span class="arrow">→</span></a></li>
     </ul>
   </nav>
 </aside>
-    
+
     <main class="main-content">
-    <section class="hero" id="hero">
-     </div>
-    </section>
+      <!-- horizontal ladybug crawl track at top of page -->
+      <div class="horizontal-crawl-container">
+        <div class="h-crawl-line"></div>
+        <div class="h-ladybug-marker" id="ladybugMarker">
+          <img src="images/ladybug.png" alt="Crawling Ladybug">
+        </div>
+        <div class="h-crawl-stops">
+          <div class="h-crawl-stop active" data-target="crawl-bug"></div>
+          <div class="h-crawl-stop" data-target="console-bug"></div>
+          <div class="h-crawl-stop" data-target="hero"></div>
+        </div>
+      </div>
 
+      <section class="crawl-bug" id="crawl-bug">
+        <h2>The Meadow</h2>
+      </section>
 
-<!-- 
-     <section class="projects" id="projects">
-      <h2>MY PROJECTS</h2>
-    </section> -->
-<!-- 
-    <section class="about" id="about">
-      <h2>ABOUT ME</h2>
-    </section>
-
-     <section class="contact" id="contact">
-      <h2>CONTACT ME</h2>
-    </section> -->
+      <section class="console-bug" id="console-bug">
+        <h2>console-bug</h2>
+      </section>
     
  
-    <!-- <footer class="footer">
+    <footer class="footer">
       <p>&copy; 2026 Meghan Rose K. All rights reserved.</p>
-    </footer> -->
+    </footer>
+  </main>
+    <script src="ladybug-enter.js"></script>
   </body>
 </html>

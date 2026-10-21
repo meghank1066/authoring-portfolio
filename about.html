@@ -3,57 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic HTML Page</title>
+    <title>About Me | Meghan Rose</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- side bar nav -->
-    <header class="sidebar-nav">
+    <aside class="sidebar-nav">
+      <header class="brand">
+        <img class="logo" src="images/ladybug.png" alt="" />
+        <a class="title" href="index.html">Meghan Keightley</a>
+        <p class="subtitle">MSc Interactive Digital Media &amp; Computer Science @ Trinity</p>
+        <p class="bio">&lt;3</p>
+      </header>
+
       <nav>
-        <div class="brand">
-          <a class="title" href="index.html">Meghan Keightley</a>
-          <p class="subtitle">IDM @ TRINITY COLLEGE DUBLIN</p>
-        </div>
+        <p class="sidebar-label">Explore</p>
         <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html"><span class="num">01.</span> The Meadow <span class="arrow">→</span></a></li>
+          <li><a href="about.html" class="is-active" aria-current="page"><span class="num">02.</span> About Me <span class="arrow">→</span></a></li>
+          <li><a href="playground.html"><span class="num">03.</span> Bug Report <span class="arrow">→</span></a></li>
         </ul>
-
-        <div class="socials">
-          <p class="socials-header">SOCIALS</p>
-          <ul>
-            <li><a href="https://linkedin.com" target="_blank">LINKEDIN</a></li>
-            <li><a href="mailto:your-email@example.com">EMAIL</a></li>
-            <li><a href="https://github.com" target="_blank">GITHUB</a></li>
-          </ul>
-        </div>
       </nav>
-    </header>
-    
+    </aside>
+
     <main class="main-content">
-    <section class="hero" id="hero">
-      <h1>Welcome to My Portfolio</h1>
-      <div class="hero-graphic">
-        <!-- // tba hero graphic or image here -->
-      </div>
-    </section>
-
-     <section class="projects" id="projects">
-      <h2>MY PROJECTS</h2>
-    </section>
-
-    <section class="about" id="about">
-      <h2>ABOUT ME</h2>
-    </section>
-
-     <section class="contact" id="contact">
-      <h2>CONTACT ME</h2>
-    </section>
-
-    <footer class="footer">
-      <p>&copy; 2026 Meghan Rose K. All rights reserved.</p>
-    </footer>
+      <section class="about" id="about">
+        <h1>About Me</h1>
+      </section>
+    </main>
   </body>
 </html>
