@@ -10,12 +10,20 @@
     --card-bg: #ffffff;
 }
 
-/* font */
+
 @font-face {
   font-family: 'Gelica';
-  src: url('fonts/gelica/Gelica-Light.woff2') format('woff2');
-  font-weight: 200;
+  src: url('../fonts/Gelica-Light.woff2') format('woff2');
+  font-weight: 300; /* Light */
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gelica';
+  src: url('../fonts/Gelica-LightItalic.woff2') format('woff2');
+  font-weight: 300; /* Light */
+  font-style: italic;
   font-display: swap;
 }
 
@@ -23,6 +31,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: Gelica, sans-serif;
 }
 
 body
