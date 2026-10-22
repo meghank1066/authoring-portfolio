@@ -15,20 +15,34 @@
         <p class="bio">&lt;3</p>
       </header>
 
-      <nav>
+      <nav class="nav1">
         <p class="sidebar-label">Explore</p>
         <ul class="nav-links">
-          <li><a href="index.html"><span class="num">01.</span> The Meadow <span class="arrow">→</span></a></li>
-          <li><a href="about.html" class="is-active" aria-current="page"><span class="num">02.</span> About Me <span class="arrow">→</span></a></li>
-          <li><a href="playground.html"><span class="num">03.</span> Bug Report <span class="arrow">→</span></a></li>
+          <li><a href="index.html">The Meadow <span class="arrow">→</span></a></li>
+          <li><a href="about.html" class="is-active" aria-current="page">About Me <span class="arrow">→</span></a></li>
+          <li><a href="playground.html"></span> Bug Report <span class="arrow">→</span></a></li>
         </ul>
       </nav>
     </aside>
 
     <main class="main-content">
+       <main class="main-content">
+      <!-- horizontal ladybug crawl track at top of page -->
+      <div class="horizontal-crawl-container">
+        <div class="h-crawl-line"></div>
+        <div class="h-ladybug-marker" id="ladybugMarker">
+          <img src="images/ladybug.png" alt="Crawling Ladybug">
+        </div>
+        <div class="h-crawl-stops">
+          <div class="h-crawl-stop active" data-target="crawl-bug"></div>
+          <a class="h-crawl-stop" href="about.html" aria-label="about-me"></a>
+          <div class="h-crawl-stop" href="playground.html" data-target="the-bug-log"></div>
+        </div>
+      </div>
       <section class="about" id="about">
         <h1>About Me</h1>
       </section>
     </main>
+    <script src="ladybug-enter.js"></script>
   </body>
 </html>
