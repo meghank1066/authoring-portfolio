@@ -30,7 +30,7 @@
       "slug": "velora-dublin-bike-app",
       "title": "Velora",
       "description": "A mobile cycling application designed to help Dublin commuters locate bike stations and plan routes.",
-      "image": "images/velora/bikecitycover.png",
+      "image": "images/velora/veloracover.png",
       "href": "velora.html",
       "badge": "Mobile App",
       "metrics": [
