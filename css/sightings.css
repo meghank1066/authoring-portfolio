@@ -1,0 +1,570 @@
+/* Ladybug Sightings - visitor cards */
+
+:root {
+  --c-red: #B5222F;
+  --c-green: #bacdbb;
+  --c-purple: #c7e3f7;
+  --c-moss: #ffbd7b;
+  --c-yellow: #fffcb1;
+  --c-blue: #e3b3dd;
+  --c-pink: #afa7ff;
+  --c-meg: #42979f;
+  --background-color: #F7D6DD;
+  --text: #2B2A1E;
+  --box-color: #F7D6DD;
+  --white-text: #F7D6DD;
+
+  --paper: #F7D6DD;
+  --sand: #B5222F;
+  --ink: #1d1d1b;
+
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+
+/* visitor log */
+
+.log-count {
+  margin: .2rem 0 1rem;
+  font-family: var(--mono);
+  opacity: .7;
+}
+
+.log-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  margin-bottom: 1.2rem;
+}
+
+.btn-dark,
+.btn-ghost {
+  padding: .9rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: .8rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background: #222;
+  color: white;
+}
+
+.btn-dark:disabled {
+  opacity: .5;
+  cursor: wait;
+}
+
+.btn-ghost {
+  background: var(--sand);
+  color: var(--white-text);
+}
+
+.load-more {
+  display: block;
+  margin: 2rem auto;
+}
+
+.gallery-empty {
+  font-family: var(--mono);
+  opacity: .6;
+}
+
+
+/* visitor statistics */
+
+.stats {
+  margin-bottom: 1.8rem;
+  font-family: var(--mono);
+  font-size: .78rem;
+}
+
+.stats summary {
+  opacity: .7;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.stats h4 {
+  margin: 0 0 .4rem;
+  font-size: .68rem;
+  font-weight: normal;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  opacity: .55;
+}
+
+.stats p,
+.stats ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stats li {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .2rem;
+  text-transform: capitalize;
+}
+
+.stats .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--c, #999);
+}
+
+
+/* our visitor card gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 2rem 1rem;
+}
+
+
+/* our visitor cards */
+
+.vcard {
+  --c: var(--c-red);
+
+  position: relative;
+  container-type: inline-size;
+  aspect-ratio: 1.54;
+  overflow: hidden;
+
+  border-radius: 30px;
+  background: var(--c);
+  color: white;
+
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+/* each insect has its own colour */
+
+.vcard[data-color="red"] {
+  --c: var(--c-red);
+}
+
+.vcard[data-color="green"] {
+  --c: var(--c-green);
+}
+
+.vcard[data-color="purple"] {
+  --c: var(--c-purple);
+}
+
+.vcard[data-color="moss"] {
+  --c: var(--c-moss);
+}
+
+.vcard[data-color="yellow"] {
+  --c: var(--c-yellow);
+}
+
+.vcard[data-color="blue"] {
+  --c: var(--c-blue);
+}
+
+.vcard[data-color="pink"] {
+  --c: var(--c-pink);
+}
+
+.swatch[data-color="meg"] {
+  --c: var(--c-meg);
+}
+
+.vcard[data-color="meg"] {
+  --c: var(--c-meg);
+}
+
+
+.vcard[data-color="meg"] .sig path {
+  stroke: #f5ebec;
+}
+
+.gallery .vcard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, .14);
+}
+
+
+/* our card hover effect */
+
+.vcard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%),
+      rgba(255, 255, 255, .2),
+      transparent 55%);
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+.vcard:hover::after {
+  opacity: 1;
+}
+
+.editor .vcard::after {
+  display: none;
+}
+
+
+/* ahh card text */
+
+.vcard .face {
+  position: absolute;
+  inset: 0;
+  padding: 6.4cqw 7.4cqw;
+  color: var(--ink);
+}
+
+.vcard h3 {
+  position: relative;
+  margin: 0 0 8.4cqw;
+  font: 400 6.4cqw/1.1 var(--serif);
+  color: var(--ink);
+}
+
+.vcard .lbl {
+  position: relative;
+  margin: 0;
+  font: 400 3.4cqw/1.3 var(--mono);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  opacity: .6;
+}
+
+.vcard .val {
+  position: relative;
+  max-width: 62cqw;
+  margin: .4cqw 0 5cqw;
+  font: 400 4.7cqw/1.3 var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vcard .no {
+  position: absolute;
+  left: 7.4cqw;
+  bottom: 7cqw;
+  margin: 0;
+  font: 400 3.4cqw/1 var(--mono);
+  letter-spacing: .1em;
+  opacity: .6;
+}
+
+.vcard .x {
+  position: absolute;
+  left: 39.5cqw;
+  bottom: 8.8cqw;
+  font: 400 4cqw/1 var(--mono);
+}
+
+.vcard .sigline {
+  position: absolute;
+  left: 44cqw;
+  right: 7cqw;
+  bottom: 8.3cqw;
+  border-top: .35cqw solid rgba(255, 255, 255, .9);
+}
+
+
+/* signature */
+
+.vcard .sig {
+  position: absolute;
+  left: 44cqw;
+  right: 7cqw;
+  bottom: 9cqw;
+  height: 13cqw;
+  pointer-events: none;
+}
+
+.vcard .sig svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: auto;
+  touch-action: none;
+}
+
+.vcard .sig path {
+  fill: none;
+  stroke: white;
+  stroke-width: 0.010;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+
+/* clears the signature button */
+
+.clear-btn {
+  position: absolute;
+  top: 5.5cqw;
+  right: 5.5cqw;
+  z-index: 2;
+  padding: 1.6cqw 3.2cqw;
+  border: none;
+  border-radius: 2.4cqw;
+  background: rgba(255, 255, 255, .22);
+  color: white;
+  font: 400 3.1cqw/1 var(--mono);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+/* card editor */
+
+.editor {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.5rem 1rem 3rem;
+  background: var(--background-color);
+  color: var(--ink);
+  font-family: var(--mono);
+}
+
+.editor.open {
+  display: flex;
+}
+
+.editor-back {
+  position: absolute;
+  top: 1.4rem;
+  left: 1.5rem;
+  border: none;
+  background: none;
+  color: inherit;
+  font: 400 .8rem var(--mono);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  opacity: .75;
+  cursor: pointer;
+}
+
+.editor-title {
+  margin: 0;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.editor-sub {
+  margin: .4rem 0 2.2rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  opacity: .6;
+}
+
+
+/* nickname input */
+
+.name-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .8rem;
+  margin-bottom: 2.4rem;
+}
+
+.name-row label {
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.name-row input {
+  width: min(368px, 80vw);
+  padding: .9rem 1.1rem;
+  border: none;
+  border-radius: 14px;
+  outline: none;
+  background: white;
+  color: #444;
+  font: 400 1rem var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.name-row input:focus {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, .25);
+}
+
+
+/* editor preview and buttons */
+
+.icon-btn {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 12px;
+  background: var(--sand);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+#previewSlot {
+  width: min(360px, 88vw);
+}
+
+#previewSlot .vcard {
+  width: 100%;
+}
+
+#previewSlot .sig {
+  pointer-events: auto;
+  cursor: crosshair;
+}
+
+
+/* our colour picker */
+
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  margin: 2.2rem 0;
+}
+
+.swatches {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.swatch {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--c);
+  cursor: pointer;
+}
+
+.swatch[data-color="red"] {
+  --c: var(--c-red);
+}
+
+.swatch[data-color="green"] {
+  --c: var(--c-green);
+}
+
+.swatch[data-color="purple"] {
+  --c: var(--c-purple);
+}
+
+.swatch[data-color="moss"] {
+  --c: var(--c-moss);
+}
+
+.swatch[data-color="yellow"] {
+  --c: var(--c-yellow);
+}
+
+.swatch[data-color="blue"] {
+  --c: var(--c-blue);
+}
+
+.swatch[data-color="pink"] {
+  --c: var(--c-pink);
+}
+
+.swatch[data-color="meg"] {
+  --c: var(--c-meg);
+}
+
+
+.swatch.on {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+}
+
+
+/* more editor tools */
+
+.seg {
+  display: flex;
+  gap: 2px;
+  padding: 5px;
+  border-radius: 14px;
+  background: var(--sand);
+}
+
+.seg button {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.seg button.on {
+  background: white;
+}
+
+.editor-error {
+  margin: 0 0 1rem;
+  color: #b3261e;
+}
+
+.editor .btn-dark {
+  padding: 1.1rem 2.2rem;
+  font-size: 1rem;
+}
+
+
+/* media q */
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .editor {
+    padding-top: 5rem;
+  }
+
+  .name-row {
+    gap: .6rem;
+  }
+}

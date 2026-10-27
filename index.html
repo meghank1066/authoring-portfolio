@@ -1,58 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meghan Rose</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- side bar nav -->
-   <aside class="sidebar-nav">
-  <header class="brand">
-    <img class="logo" src="images/ladybug.png" alt="">
-    <a class="title" href="index.html">Meghan Keightley</a>
-    <p class="subtitle">MSc Interactive Digital Media & Computer Science @ Trinity</p>
-    <p class="bio"><3</p>
-  </header>
 
-  <nav>
-    <p class="sidebar-label">Explore</p>
-    <ul class="nav-links">
-      <li><a hrexf="index.html" class="is-active"><span class="num">01.</span> The Meadow <span class="arrow">→</span></a></li>
-      <li><a href="about.html"><span class="num">02.</span> About Me <span class="arrow">→</span></a></li>
-      <li><a href="playground.html"><span class="num">03.</span> The Bug Log <span class="arrow">→</span></a></li>
-    </ul>
-  </nav>
-</aside>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meghan Rose</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- side bar nav -->
+  <aside class="sidebar-nav">
+    <header class="brand">
+      <img class="logo" src="images/Ladybug.GIF" alt="Ladybug logo">
+      <a class="title" href="index.html">Meghan Keightley</a>
+      <p class="subtitle">MSc Interactive Digital Media & Computer Science @ Trinity</p>
+      <p class="bio">I’m a designer at heart, a builder by nature and  curious about what’s possible :) Open to opportunities from September 2027.</p>
+    </header>
 
-    <main class="main-content">
-      <!-- horizontal ladybug crawl track at top of page -->
-      <div class="horizontal-crawl-container">
+    <nav class="nav1">
+      <p class="sidebar-label">Explore</p>
+      <ul class="nav-links">
+        <li><a href="index.html" class="is-active">The Meadow <span class="arrow">→</span></a></li>
+        <li><a href="about.html">About Me <span class="arrow">→</span></a></li>
+        <li><a href="playground.html">Ladybug Sightings<span class="arrow">→</span></a></li>
+      </ul>
+    </nav>
+
+    <img
+  class="sidebar-img"
+  src="images/cat-window.PNG"
+  alt="A cat sitting in a window">
+
+     <div class="sidebar-socials">
+      <a href="https://github.com/meghank1066" target="_blank" >GitHub</a>
+      <a href="https://www.linkedin.com/in/meghankeightley/" target="_blank">LinkedIn</a>
+      <a href="/resume/MeghanKeightley-UXDesign.pdf" target="_blank">Resume</a>
+    </div>
+
+  
+  </aside>
+
+  <main class="main-content">
+    <div class="horizontal-crawl-container">
         <div class="h-crawl-line"></div>
         <div class="h-ladybug-marker" id="ladybugMarker">
           <img src="images/ladybug.png" alt="Crawling Ladybug">
         </div>
         <div class="h-crawl-stops">
           <div class="h-crawl-stop active" data-target="crawl-bug"></div>
-          <div class="h-crawl-stop" data-target="console-bug"></div>
-          <div class="h-crawl-stop" data-target="hero"></div>
+          <a class="h-crawl-stop" data-target="about-me"></a>
+          <div class="h-crawl-stop" data-target="the-bug-log"></div>
         </div>
       </div>
+    <div class="latest-bug-log" id="LatestBugLog">
+      <div class="log-banner-header">
+        <div class="log-label-group">
+          <span class="bug-dot">PATCH NOTES</span>
+          <span class="log-date">Oct 21, 2026</span>
+        </div>
+        <button class="log-toggle-btn" id="logToggleBtn">
+          <svg class="arrow-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </div>
 
-      <section class="crawl-bug" id="crawl-bug">
-        <h2>The Meadow</h2>
-      </section>
+      <p class="log-status-text">
+        working on my portfolio! </p>
 
-      <section class="console-bug" id="console-bug">
-        <h2>console-bug</h2>
-      </section>
-    
- 
+      <div class="all-logs-drawer" id="allLogsDrawer">
+      <div class="log-history">
+
+  <div class="log-history-item">
+    <div class="history-meta">
+      <span class="patch-badge">PATCH v1.0.2</span>
+      <span class="history-date">Oct 26, 2026</span>
+    </div>
+    <p class="history-text">
+      <span class="patch-type added">added</span> A new visitor card database for the meadow log<br>
+      <span class="patch-type wip">wip</span> Giving the portfolio a fresh new colour scheme
+    </p>
+  </div>
+
+  <div class="log-history-item">
+    <div class="history-meta">
+      <span class="patch-badge">PATCH v1.0.1</span>
+      <span class="history-date">Oct 15, 2026</span>
+    </div>
+    <p class="history-text">
+      <span class="patch-type wip">wip</span> Brainstorming ideas for my new portfolio for new projects, fresh details and a little meadow magic
+    </p>
+  </div>
+
+</div>
+      </div>
+
+      <div class="log-footer">
+        <button class="all-logs-link" id="allLogsLink">ALL LOGS →</button>
+      </div>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+    </div>
     <footer class="footer">
       <p>&copy; 2026 Meghan Rose K. All rights reserved.</p>
     </footer>
   </main>
-    <script src="ladybug-enter.js"></script>
-  </body>
+  <script src="ladybug-enter.js"></script>
+   <script src="bug-logs.js"></script>
+  <script src="projects.js"></script>
+</body>
+
 </html>

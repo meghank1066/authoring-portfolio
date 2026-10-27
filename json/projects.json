@@ -1,0 +1,56 @@
+{
+  "projects": [
+    {
+      "slug": "sporex-mould-identification",
+      "title": "SPOREX",
+      "description": "A web application developed for the Asthma Society of Ireland to help users identify mould types and health risks.",
+      "image": "images/sporex/sporexcover.png",
+      "href": "sporex.html",
+      "badge": "Client Project",
+      "metrics": [
+        { "value": "100%", "label": "Mobile Friendly" },
+        { "value": "Ireland", "label": "Target Region" },
+        { "value": "UX / CS", "label": "Focus Area" }
+      ]
+    },
+    {
+      "slug": "nexspace-vr",
+      "title": "NexSpace VR",
+      "description": "An immersive virtual reality experience built for Meta Quest using Unity and C#.",
+      "image": "images/nexspace/nexspacecover.png",
+      "href": "nexspace.html",
+      "badge": "VR Project",
+      "metrics": [
+        { "value": "Meta Quest", "label": "Platform" },
+        { "value": "Unity/C#", "label": "Tech Stack" },
+        { "value": "3D Assets", "label": "Optimization" }
+      ]
+    },
+    {
+      "slug": "velora-dublin-bike-app",
+      "title": "Velora",
+      "description": "A mobile cycling application designed to help Dublin commuters locate bike stations and plan routes.",
+      "image": "images/velora/bikecitycover.png",
+      "href": "velora.html",
+      "badge": "Mobile App",
+      "metrics": [
+        { "value": "Real-Time", "label": "Live Map" },
+        { "value": "Swift", "label": "iOS Tech" },
+        { "value": "Dublin", "label": "Location" }
+      ]
+    },
+    {
+      "slug": "nintendo-switch-ui",
+      "title": "Nintendo UX",
+      "description": "Reimagining navigation, discoverability and accessibility across Nintendo's gaming ecosystem.",
+      "image": "images/nintendo/nintendocover.png",
+      "href": "nintendo.html",
+      "badge": "UI Redesign",
+      "metrics": [
+        { "value": "Figma", "label": "Prototyping" },
+        { "value": "Ecosystem", "label": "UX Strategy" },
+        { "value": "Accessibility", "label": "Focus" }
+      ]
+    }
+  ]
+}
