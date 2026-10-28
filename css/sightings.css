@@ -8,7 +8,7 @@
   --c-yellow: #fffcb1;
   --c-blue: #e3b3dd;
   --c-pink: #afa7ff;
-  --c-meg: #42979f;
+  --c-teal: #42979f;
   --background-color: #F7D6DD;
   --text: #2B2A1E;
   --box-color: #F7D6DD;
@@ -186,16 +186,16 @@
   --c: var(--c-pink);
 }
 
-.swatch[data-color="meg"] {
-  --c: var(--c-meg);
+.swatch[data-color="teal"] {
+  --c: var(--c-teal);
 }
 
-.vcard[data-color="meg"] {
-  --c: var(--c-meg);
+.vcard[data-color="teal"] {
+  --c: var(--c-teal);
 }
 
 
-.vcard[data-color="meg"] .sig path {
+.vcard[data-color="teal"] .sig path {
   stroke: #f5ebec;
 }
 
@@ -505,8 +505,8 @@
   --c: var(--c-pink);
 }
 
-.swatch[data-color="meg"] {
-  --c: var(--c-meg);
+.swatch[data-color="teal"] {
+  --c: var(--c-teal);
 }
 
 

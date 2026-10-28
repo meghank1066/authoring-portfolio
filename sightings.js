@@ -45,17 +45,17 @@ const insects = {
     nicknames: ['Sparky fly', 'Lumen one', 'Beacon of light', 'Twilight sky', 'Dusky']
   },
 
-  meg: {
-    names: ['meghan', 'rose', 'special edition'],
-    color: 'meg',
-    nicknames: ['Meg', 'Meghan', 'Rose', 'Meghan Rose']
-  }
+ gardener: {
+  names: ['meghan', 'rose', 'caretaker'],
+  color: 'teal',
+  nicknames: ['Meg', 'Meghan', 'Rose', 'Meghan Rose']
+}
 };
 
 // master list of all valid color variants supported across the meadow
 const colours = [
   'red', 'purple', 'blue',
-  'green', 'pink', 'yellow', 'moss', 'meg'
+  'green', 'pink', 'yellow', 'moss', 'teal'
 ];
 
 

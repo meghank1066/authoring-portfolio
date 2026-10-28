@@ -8,9 +8,9 @@
       "href": "sporex.html",
       "badge": "Client Project",
       "metrics": [
-        { "value": "100%", "label": "Mobile Friendly" },
-        { "value": "Ireland", "label": "Target Region" },
-        { "value": "UX / CS", "label": "Focus Area" }
+        { "value": "50+", "label": "User Testers" },
+       { "value": "AI + IoT", "label": "Integrated System" },
+{ "value": "Real-Time", "label": "Environmental Monitoring" }
       ]
     },
     {
@@ -21,22 +21,22 @@
       "href": "nexspace.html",
       "badge": "VR Project",
       "metrics": [
-        { "value": "Meta Quest", "label": "Platform" },
-        { "value": "Unity/C#", "label": "Tech Stack" },
-        { "value": "3D Assets", "label": "Optimization" }
+        { "value": "8", "label": "Team Members" },
+         { "value": "40+", "label": "User Testers" },
+        { "value": "VR + HCI", "label": "Focus" }
       ]
     },
     {
       "slug": "velora-dublin-bike-app",
       "title": "Velora",
       "description": "A mobile cycling application designed to help Dublin commuters locate bike stations and plan routes.",
-      "image": "images/velora/veloracover.png",
+      "image": "images/velora/bikecitycover.png",
       "href": "velora.html",
       "badge": "Mobile App",
       "metrics": [
-        { "value": "Real-Time", "label": "Live Map" },
-        { "value": "Swift", "label": "iOS Tech" },
-        { "value": "Dublin", "label": "Location" }
+       { "value": "SwiftUI", "label": "Native iOS UI" },
+    { "value": "Clustering", "label": "Map Optimisation" },
+    { "value": "API + GPS", "label": "Live Data Integration" }
       ]
     },
     {
@@ -47,9 +47,9 @@
       "href": "nintendo.html",
       "badge": "UI Redesign",
       "metrics": [
-        { "value": "Figma", "label": "Prototyping" },
-        { "value": "Ecosystem", "label": "UX Strategy" },
-        { "value": "Accessibility", "label": "Focus" }
+         { "value": "Figma", "label": "Interactive Prototype" },
+    { "value": "UI/UX", "label": "Interface Redesign" },
+    { "value": "A11y", "label": "Accessibility Focus" }
       ]
     }
   ]

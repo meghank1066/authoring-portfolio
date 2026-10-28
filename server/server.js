@@ -35,12 +35,12 @@ app.post('/api/sightings', async (req, res) => {
 
         const colours = [
             'red', 'yellow', 'purple', 'blue',
-            'green', 'pink', 'moss', 'meg'
+            'green', 'pink', 'moss', 'teal'
         ];
 
         const insects = [
             'ladybug', 'bee', 'butterfly', 'dragonfly',
-            'grasshopper', 'spider', 'firefly', 'meg'
+            'grasshopper', 'spider', 'firefly', 'gardener'
         ];
 
         if (
