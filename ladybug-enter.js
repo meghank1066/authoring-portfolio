@@ -60,11 +60,10 @@ document.querySelectorAll('.h-crawl-stop').forEach((stop) => {
 });
 
 // vertical
-
 document.addEventListener("DOMContentLoaded", () => {
-      const steps = document.querySelectorAll(".v-wheel-step");
-      const sections = document.querySelectorAll(".project-section-block");
-      const marker = document.getElementById("vLadybugMarker");
+      const steps = document.querySelectorAll(".timeline-item");
+  const sections = document.querySelectorAll(".case-study-section");
+  const marker = document.getElementById("vLadybugMarker");
 
       function updateWheelNav() {
         let currentSectionId = "context";
@@ -79,20 +78,29 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         steps.forEach(step => {
-          const targetSection = step.getAttribute("data-section");
+          const targetSection = step.getAttribute("href").substring(1);
           if (targetSection === currentSectionId) {
-            step.classList.add("is-active");
+        step.classList.add("active");
             if (marker) {
-              marker.style.top = `${step.offsetTop}px`;
+          marker.style.top = `${step.offsetTop}px`;
             }
           } else {
-            step.classList.remove("is-active");
-          }
-        });
+        step.classList.remove("active");
       }
+    });
+  }
+  window.addEventListener("scroll", updateWheelNav);
+  updateWheelNav();
 
-      window.addEventListener("scroll", updateWheelNav);
-      updateWheelNav();
+  steps.forEach(step => {
+    step.addEventListener("click", function() {
+      steps.forEach(s => s.classList.remove("active"));
+      this.classList.add("active");
+      if (marker) {
+        marker.style.top = `${this.offsetTop}px`;
+      }
+    });
+  });
 
       // click handler for about page
         const card = document.querySelector('.doily-card');

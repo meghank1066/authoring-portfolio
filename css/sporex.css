@@ -79,6 +79,12 @@ body {
   opacity: 0.6;
 }
 
+.timeline-line.active .node
+{
+  background-color: #555;
+  border-color: #555;
+}
+
 .v-ladybug-marker {
   position: absolute;
   left: 12px;
@@ -265,7 +271,7 @@ body {
   align-items: center;
   gap: 8px;
   padding: 10px 20px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--text-primary);
   border-radius: 6px;
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -273,7 +279,7 @@ body {
   text-decoration: none;
   margin-top: 8px;
   transition: all 0.2s ease;
-  background-color: color-mix(in srgb, var(--accent) 90%, transparent);
+  background-color: color-mix(in srgb, var(--text-primary) 90%, transparent);
 }
 
 .action-button:hover {
