@@ -4,6 +4,7 @@
   --sidebar-line: #6b7a4a;
   --card-bg: #e2ebce;
   --accent-header: #21351d;
+  --accent: #B5222F;
   
   /* my text colors */
   --text-primary: #1e2815;
@@ -11,11 +12,9 @@
   --text-header-box: #e2ebce;
 
   /* my typography */
-  --font-serif: "Georgia", "Times New Roman", serif;
-  --font-mono: "Space Mono", "Courier New", monospace;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-
-  
+  --font-serif: "Gelica", sans-serif;
+  --font-mono: "Gelica", sans-serif;
+  --font-sans: "Gelica", sans-serif;
 }
 
 body {
@@ -27,7 +26,6 @@ body {
   overflow-x: hidden;
   margin: 0;
 }
-
 
 .sporex-content,
 .main-wrapper {
@@ -182,12 +180,13 @@ body {
 }
 
 .carddata-card {
-  background-color: var(--card-bg);
+  background-color: var(--accent);
   border-radius: 12px;
   padding: 24px 28px;
   margin: 0 0 48px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   min-height: 0vh;
+  color: var(--text-header-box)
 }
 
 .card-grid {
@@ -207,7 +206,7 @@ body {
   font-size: 0.68rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-muted);
+  color: var(--text-header-box);
   margin-bottom: 4px;
 }
 
@@ -215,7 +214,7 @@ body {
   font-family: var(--font-mono);
   font-size: 0.82rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--text-header-box);
   line-height: 1.4;
 }
 
@@ -255,9 +254,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   padding: 6px 12px;
-  border: 1px solid var(--text-primary);
+  border: 1px solid var(--accent);
   border-radius: 4px;
-  color: var(--text-primary);
+  color: var(--text-header-box);
+  background-color: color-mix(in srgb, var(--accent) 90%, transparent);
 }
 
 .action-button {
@@ -265,19 +265,20 @@ body {
   align-items: center;
   gap: 8px;
   padding: 10px 20px;
-  border: 1px solid var(--text-primary);
+  border: 1px solid var(--accent);
   border-radius: 6px;
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: var(--text-primary);
+  color: var(--text-header-box);
   text-decoration: none;
   margin-top: 8px;
   transition: all 0.2s ease;
+  background-color: color-mix(in srgb, var(--accent) 90%, transparent);
 }
 
 .action-button:hover {
-  background-color: var(--text-primary);
-  color: var(--bg-color);
+  background-color: var(--accent);
+  color: var(--text-header-box);
 }
 
 .sidebar-nav {
@@ -295,6 +296,56 @@ body {
     position: sticky;
     top: 0;
     overflow: hidden;
+}
+
+.image-sporex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 800px;
+  margin: 20px auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.image-sporex img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.stat-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 28px 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-family: var(--font-mono);
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-text {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.45;
+}
+
+@media (max-width: 768px) {
+  .stat-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* media queries */
