@@ -4,7 +4,7 @@
       "slug": "sporex-mould-identification",
       "title": "SPOREX",
       "description": "A web application developed for the Asthma Society of Ireland to help users identify mould types and health risks.",
-      "image": "images/sporex/sporexcover.png",
+      "image": "images/sporex/sporexcover.gif",
       "href": "sporex.html",
       "badge": "Client Project",
       "metrics": [
@@ -17,7 +17,7 @@
       "slug": "nexspace-vr",
       "title": "NexSpace VR",
       "description": "An immersive virtual reality experience built for Meta Quest using Unity and C#.",
-      "image": "images/nexspace/nexspacecover.png",
+      "image": "images/nexspace/nexspace.gif",
       "href": "nexspace.html",
       "badge": "VR Project",
       "metrics": [
@@ -30,7 +30,7 @@
       "slug": "velora-dublin-bike-app",
       "title": "Velora",
       "description": "A mobile cycling application designed to help Dublin commuters locate bike stations and plan routes.",
-      "image": "images/velora/bikecitycover.png",
+      "image": "images/velora/velora.gif",
       "href": "velora.html",
       "badge": "Mobile App",
       "metrics": [
@@ -43,7 +43,7 @@
       "slug": "nintendo-switch-ui",
       "title": "Nintendo UX",
       "description": "Reimagining navigation, discoverability and accessibility across Nintendo's gaming ecosystem.",
-      "image": "images/nintendo/nintendocover.png",
+      "image": "images/nintendo/nintendo.gif",
       "href": "nintendo.html",
       "badge": "UI Redesign",
       "metrics": [

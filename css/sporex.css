@@ -14,6 +14,8 @@
   --font-serif: "Georgia", "Times New Roman", serif;
   --font-mono: "Space Mono", "Courier New", monospace;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  
 }
 
 body {
@@ -26,22 +28,16 @@ body {
   margin: 0;
 }
 
-.sporex-content,
-.main-wrapper {
-  margin-left: 280px;
-  width: calc(100% - 280px);
-  display: flex;
-  justify-content: center;
-  padding: 60px 20px 100px;
-  line-height: 1.6;
-}
 
 .sporex-content,
 .main-wrapper {
+  flex: 1;
+  min-width: 0;
   margin-left: 0;
-  width: 100%;
+  display: flex;
   justify-content: flex-start;
-  padding-left: 220px;
+  padding: 60px 20px 100px 200px;
+  line-height: 1.6;
 }
 
 .content-container {
@@ -70,7 +66,7 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 275px;
+  left: 315px;
   z-index: 10;
   background-color: transparent;
 }
@@ -196,7 +192,7 @@ body {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 20px;
   /* min-height: 350px; */
 }
@@ -285,6 +281,9 @@ body {
 }
 
 .sidebar-nav {
+    width: 340x;
+    flex-shrink: 0;
+    box-sizing: border-box;
     background-color: var(--box-color);
     border-right: 1px solid rgba(34, 34, 34, 0.15);
     padding: 1rem 1.25rem;
@@ -298,12 +297,10 @@ body {
     overflow: hidden;
 }
 
-
-
 /* media queries */
 @media (max-width: 992px) {
   .sidebar {
-    left: 0;
+    left: 315px;
   }
   .sporex-content,
   .main-wrapper {
