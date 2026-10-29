@@ -13,7 +13,7 @@
     --text-header-box: #FFFBF4;
     --inner-frame: #B5222F;
     --project-card: #B5222F;
-
+    --gif-pink: #F8E1E8;
     --badge: #E9E2CC;
     --border-badge: #D9D1B8;
     --log-bg: #222222;
@@ -107,6 +107,14 @@ body {
     margin-inline: auto;
     cursor: pointer;
 }
+.hero-img-container {
+    background-color: var(--gif-pink);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 1rem auto;
+    overflow: hidden;
+}
 
 .hero-img2 {
     display: block;
@@ -114,7 +122,7 @@ body {
     max-width: 1100px;
     height: auto;
     max-height: 220px;
-    margin: 1rem auto;
+    margin: 0 auto;
     cursor: pointer;
     object-fit: contain;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -125,7 +133,7 @@ body {
 }
 
 .hero-img2:hover {
-    transform: scale(1.00) translateY(-2px);
+    transform: translateY(-2px);
     box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
 }
 
