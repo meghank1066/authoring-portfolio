@@ -108,7 +108,7 @@ body {
     cursor: pointer;
 }
 .hero-img-container {
-    background-color: var(--gif-pink);
+    background-color: var(--background-color);
     border-radius: 16px;
     width: 100%;
     max-width: 1100px;
