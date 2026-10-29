@@ -1,0 +1,24 @@
+:root {
+    /* colour palette */
+    --bg-color: #abb88b;
+    --sidebar-line: #6b7a4a;
+    --card-bg: #e2ebce;
+    --accent-header: #21351d;
+    --accent: #B5222F;
+    --color-white: #ffffff;
+
+    /* my text colors */
+    --text-primary: #1e2815;
+    --text-muted: #5e6c46;
+    --text-header-box: #e2ebce;
+
+    /* my typography */
+    --font-serif: "Gelica", sans-serif;
+    --font-mono: "Gelica", sans-serif;
+    --font-sans: "Gelica", sans-serif;
+}
+
+.card-value a {
+    color: var(--color-white);
+    text-decoration: none;
+}

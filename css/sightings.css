@@ -11,24 +11,18 @@
   --c-teal: #42979f;
   --background-color: #F7D6DD;
   --text: #2B2A1E;
-  --box-color: #F7D6DD;
-  --white-text: #F7D6DD;
-
-  --paper: #F7D6DD;
-  --sand: #B5222F;
   --ink: #1d1d1b;
-
-  --serif: "Newsreader", Georgia, "Times New Roman", serif;
-  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --serif: "Newsreader", georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", menlo, monospace;
 }
 
 
 /* visitor log */
 
 .log-count {
-  margin: .2rem 0 1rem;
+  margin: 0.2rem 0 1rem;
   font-family: var(--mono);
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .log-actions {
@@ -67,12 +61,12 @@
 
 .load-more {
   display: block;
-  margin: 2rem auto;
+  margin: 0.2rem auto;
 }
 
 .gallery-empty {
   font-family: var(--mono);
-  opacity: .6;
+  opacity: 0.6;
 }
 
 
@@ -99,7 +93,7 @@
 }
 
 .stats h4 {
-  margin: 0 0 .4rem;
+  margin: 0 0 0.4rem;
   font-size: .68rem;
   font-weight: normal;
   letter-spacing: .1em;
@@ -143,16 +137,13 @@
 
 .vcard {
   --c: var(--c-red);
-
   position: relative;
   container-type: inline-size;
   aspect-ratio: 1.54;
   overflow: hidden;
-
   border-radius: 30px;
   background: var(--c);
   color: white;
-
   transition: transform .25s ease, box-shadow .25s ease;
 }
 
@@ -186,14 +177,9 @@
   --c: var(--c-pink);
 }
 
-.swatch[data-color="teal"] {
-  --c: var(--c-teal);
-}
-
 .vcard[data-color="teal"] {
   --c: var(--c-teal);
 }
-
 
 .vcard[data-color="teal"] .sig path {
   stroke: #f5ebec;
@@ -201,7 +187,7 @@
 
 .gallery .vcard:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, .14);
+  box-shadow: 0 14px 30px rgb(0 0 0 / 14%);
 }
 
 
@@ -213,7 +199,7 @@
   inset: 0;
   pointer-events: none;
   background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%),
-      rgba(255, 255, 255, .2),
+      rgb(255 255 255 / 20%),
       transparent 55%);
   opacity: 0;
   transition: opacity .25s;
@@ -229,7 +215,6 @@
 
 
 /* ahh card text */
-
 .vcard .face {
   position: absolute;
   inset: 0;
@@ -256,7 +241,7 @@
 .vcard .val {
   position: relative;
   max-width: 62cqw;
-  margin: .4cqw 0 5cqw;
+ margin: 0.4cqw 0 5cqw;
   font: 400 4.7cqw/1.3 var(--mono);
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -288,7 +273,7 @@
   left: 44cqw;
   right: 7cqw;
   bottom: 8.3cqw;
-  border-top: .35cqw solid rgba(255, 255, 255, .9);
+  border-top: 0.35cqw solid rgb(255 255 255 / 90%);
 }
 
 
@@ -320,10 +305,7 @@
   stroke-linejoin: round;
 }
 
-
-
 /* clears the signature button */
-
 .clear-btn {
   position: absolute;
   top: 5.5cqw;
@@ -332,7 +314,7 @@
   padding: 1.6cqw 3.2cqw;
   border: none;
   border-radius: 2.4cqw;
-  background: rgba(255, 255, 255, .22);
+  background: rgb(255 255 255 / 22%);
   color: white;
   font: 400 3.1cqw/1 var(--mono);
   letter-spacing: .14em;
@@ -382,7 +364,7 @@
 }
 
 .editor-sub {
-  margin: .4rem 0 2.2rem;
+  margin: 0.4rem 0 2.2rem;
   letter-spacing: .1em;
   text-transform: uppercase;
   opacity: .6;
@@ -419,7 +401,7 @@
 }
 
 .name-row input:focus {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, .25);
+  box-shadow: 0 0 0 2px rgb(0 0 0 / 25%);
 }
 
 
@@ -437,15 +419,15 @@
   cursor: pointer;
 }
 
-#previewSlot {
+#preview-slot {
   width: min(360px, 88vw);
 }
 
-#previewSlot .vcard {
+#preview-slot .vcard {
   width: 100%;
 }
 
-#previewSlot .sig {
+#preview-slot .sig {
   pointer-events: auto;
   cursor: crosshair;
 }

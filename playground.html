@@ -1,93 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ladybug Sightings| Meghan Rose</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/sightings.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ladybug Sightings| Meghan Rose</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/sightings.css" />
+</head>
+
+<body>
   <aside class="sidebar-nav">
     <header class="brand">
       <img class="logo" src="images/Logo.PNG" alt="Ladybug logo">
       <a class="title" href="index.html">Meghan Keightley</a>
       <p class="subtitle">MSc Interactive Digital Media & Computer Science @ Trinity</p>
-      <p class="bio">I’m a designer at heart, a builder by nature and  curious about what’s possible :) Open to opportunities from September 2027.</p>
+      <p class="bio">I’m a designer at heart, a builder by nature and curious about what’s possible :) Open to
+        opportunities from September 2027.</p>
     </header>
 
     <nav class="nav1">
       <p class="sidebar-label">Explore</p>
       <ul class="nav-links">
-        <li><a href="index.html" >The Meadow <span class="arrow">→</span></a></li>
+        <li><a href="index.html">The Meadow <span class="arrow">→</span></a></li>
         <li><a href="about.html">About Me <span class="arrow">→</span></a></li>
         <li><a href="playground.html" class="is-active">Ladybug Sightings<span class="arrow">→</span></a></li>
       </ul>
     </nav>
 
-    <img
-  class="sidebar-img"
-  src="images/cat-window.PNG"
-  alt="A cat sitting in a window">
+    <img class="sidebar-img" src="images/cat-window.PNG" alt="A cat sitting in a window">
 
-     <div class="sidebar-socials">
-      <a href="https://github.com/meghank1066" target="_blank" >GitHub</a>
+    <div class="sidebar-socials">
+      <a href="https://github.com/meghank1066" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/meghankeightley/" target="_blank">LinkedIn</a>
       <a href="/resume/MeghanKeightley-UXDesign.pdf" target="_blank">Resume</a>
     </div>
 
-  
+
   </aside>
 
-    <main class="main-content">
-      <!-- horizontal ladybug crawl track at top of page -->
-      <div class="horizontal-crawl-container">
-        <div class="h-crawl-line"></div>
-        <div class="h-ladybug-marker" id="ladybugMarker">
-          <img src="images/ladybug.png" alt="Crawling Ladybug">
-        </div>
-        <div class="h-crawl-stops">
-          <div class="h-crawl-stop active" data-target="crawl-bug"></div>
-          <a class="h-crawl-stop" href="about.html" aria-label="about-me"></a>
-       <a class="h-crawl-stop" href="playground.html" data-target="the-bug-log" aria-label="Ladybug Sightings"></a>
-       </div>
+  <main class="main-content">
+    <!-- horizontal ladybug crawl track at top of page -->
+    <div class="horizontal-crawl-container">
+      <div class="h-crawl-line"></div>
+      <div class="h-ladybug-marker" id="ladybugMarker">
+        <img src="images/ladybug.png" alt="Crawling Ladybug">
       </div>
-      <section class="playground" id="play">
-        <h1 class="bug-log-h1">The Bug Log</h1>
-        <p class="log-count" id="logCount">&nbsp;</p>
-        <div class="log-actions">
-          <button class="btn-dark" id="openEditor" type="button">Sign the log</button>
-          <button class="btn-ghost" id="deleteMine" type="button">Delete my card</button>
+      <div class="h-crawl-stops">
+        <div class="h-crawl-stop active" data-target="crawl-bug"></div>
+        <a class="h-crawl-stop" href="about.html" aria-label="about-me"></a>
+        <a class="h-crawl-stop" href="playground.html" data-target="the-bug-log" aria-label="Ladybug Sightings"></a>
+      </div>
+    </div>
+    <section class="playground" id="play">
+      <h1 class="bug-log-h1">The Bug Log</h1>
+      <p class="log-count" id="logCount">&nbsp;</p>
+      <div class="log-actions">
+        <button class="btn-dark" id="openEditor" type="button">Sign the log</button>
+        <button class="btn-ghost" id="deleteMine" type="button">Delete my card</button>
+      </div>
+
+      <div class="gallery" id="gallery"></div>
+      <p class="gallery-empty" id="galleryMsg" hidden></p>
+      <button class="btn-ghost load more" id="loadMore" type="button" hidden>Load more
+      </button>
+    </section>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-nav-left">
+          <span>YOUR DESTINATION &darr;</span>
+          <a href="about.html">about me</a>
+          <a href="playground.html">ladybug sightings</a>
         </div>
+        <div class="footer-nav-right">
+          <a href="#top">&uarr; BACK TO TOP</a>
+        </div>
+      </div>
 
-        <div class="gallery" id="gallery"></div>
-        <p class="gallery-empty" id="galleryMsg" hidden></p>
-        <button class="btn-ghost load more" id="loadMore" type="button" hidden>Load more
-        </button>
-      </section>
-         <footer class="footer">
-  <div class="footer-top">
-    <div class="footer-nav-left">
-      <span>YOUR DESTINATION &darr;</span>
-      <a href="about.html">about me</a>
-      <a href="playground.html">ladybug sightings</a>
-    </div>
-    <div class="footer-nav-right">
-      <a href="#top">&uarr; BACK TO TOP</a>
-    </div>
-  </div>
+      <div class="footer-center">
+        <img class="footer-img" src="images/garden.PNG" alt="The garden">
+      </div>
 
-  <div class="footer-center">
-    <img class="footer-img" src="images/garden.PNG" alt="The garden">
-  </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Meghan Rose K. All rights reserved.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+              alt="Valid CSS! for about.html" />
+          </a>
+        </p>
+        <p>
+          <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+              alt="Valid CSS! for about.html" />
+          </a>
+        </p>
+      </div>
+    </footer>
+  </main>
 
-  <div class="footer-bottom">
-    <p>&copy; 2026 Meghan Rose K. All rights reserved.</p>
-  </div>
-</footer>
-    </main>
+  <script src="ladybug-enter.js"></script>
+  <script src="sightings.js"></script>
+</body>
 
-    <script src="ladybug-enter.js"></script>
-    <script src="sightings.js"></script>
-  </body>
 </html>

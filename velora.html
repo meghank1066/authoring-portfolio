@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meghan Rose</title>
+    <link rel="stylesheet" href="css/velora.css" />
     <link rel="stylesheet" href="css/sporex.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -93,230 +94,232 @@
                     </div>
                 </div>
             </div>
-           ```html
-<article class="case-study-section" id="context">
-    <h2 class="section-number-title">Context</h2>
-    <p class="body-text">
-        Everyone knows that Dublin's public bike-sharing network can be
-        challenging, especially when users need to locate nearby stations,
-        check bike availability and plan journeys efficiently. 
-        With inaccessible station information, struggling to find
-        a convenient bike and navigating the city, the whole experience can become
-        less straightforward, which is less than ideal during busy commutes.
-    </p>
-    <p class="body-text">
-        Developed as an individual project for my Mobile
-        Development module, 'Velora' explores how thoughtful
-        interface design and native iOS development can make
-        urban cycling more accessible. I shaped the app concept,
-        designed the user interface and developed the mobile
-        experience in Swift, translating live station data,
-        journey planning and sustainability tracking into
-        an intuitive and cohesive cycling companion.
-    </p>
+            <article class="case-study-section" id="context">
+                <h2 class="section-number-title">Context</h2>
+                <p class="body-text">
+                    Everyone knows that Dublin's public bike-sharing network can be
+                    challenging, especially when users need to locate nearby stations,
+                    check bike availability and plan journeys efficiently.
+                    With inaccessible station information, struggling to find
+                    a convenient bike and navigating the city, the whole experience can become
+                    less straightforward, which is less than ideal during busy commutes.
+                </p>
+                <p class="body-text">
+                    Developed as an individual project for my Mobile
+                    Development module, 'Velora' explores how thoughtful
+                    interface design and native iOS development can make
+                    urban cycling more accessible. I shaped the app concept,
+                    designed the user interface and developed the mobile
+                    experience in Swift, translating live station data,
+                    journey planning and sustainability tracking into
+                    an intuitive and cohesive cycling companion.
+                </p>
 
-    <div class="image-sporex">
-        <img src="images/velora/Velora-Bike-App-Cover.png" alt="cover-photo-bikes1">
-        <img src="images/velora/bikecitycover.png" alt="cover-photo-bikes2">
-    </div>
-    <div class="badge-group">
-        <span class="badge-2">MOBILE DEVELOPMENT</span>
-        <span class="badge-2">INDIVIDUAL PROJECT</span>
-        <span class="badge-2">UI/UX DESIGN</span>
-    </div>
-</article>
-<article class="case-study-section" id="problem">
-    <h2 class="section-number-title">The Problem</h2>
-    <p class="body-text">
-        The idea for Velora began during my six-month Erasmus
-        placement in Antwerp, Belgium. Bordering the Netherlands,
-        the city has a strong cycling culture, and I quickly fell
-        in love with how accessible its public transport and
-        bike-sharing systems were. For a one-off €50 payment,
-        I could collect a bike right outside my doorstep and
-        cycle almost everywhere. By the end of my placement,
-        I had completed 385 rides, making cycling an integral
-        part of my everyday life.
-    </p>
+                <div class="image-velora">
+                    <img src="images/velora/Velora-Bike-App-Cover.png" alt="cover-photo-bikes1">
+                    <img src="images/velora/bikecitycover.png" alt="cover-photo-bikes2">
+                </div>
+                <div class="badge-group">
+                    <span class="badge-2">MOBILE DEVELOPMENT</span>
+                    <span class="badge-2">INDIVIDUAL PROJECT</span>
+                    <span class="badge-2">UI/UX DESIGN</span>
+                </div>
+                <a href="https://github.com/meghank1066/BikeCity_Dublin" class="action-button">
+                    Github Repository &rarr;
+                </a>
+                <a href="https://www.meghankeightley.site/velora/VeloraWalkthrough" class="action-button">
+                    Video Walkthrough &rarr;
+                </a>
+            </article>
+            <article class="case-study-section" id="problem">
+                <h2 class="section-number-title">The Problem</h2>
+                <p class="body-text">
+                    The idea for Velora began during my six-month Erasmus
+                    placement in Antwerp, Belgium. Bordering the Netherlands,
+                    the city has a strong cycling culture, and I quickly fell
+                    in love with how accessible its public transport and
+                    bike-sharing systems were. For a one-off €50 payment,
+                    I could collect a bike right outside my doorstep and
+                    cycle almost everywhere. By the end of my placement,
+                    I had completed 385 rides, making cycling an integral
+                    part of my everyday life.
+                </p>
 
-    <p class="body-text">
-        Returning to Ireland, I was inspired to try Dublin's
-        public bike-sharing system during a trip to Phoenix Park
-        with a few friends. However, the experience felt considerably
-        less intuitive than what I had grown accustomed to in
-        Belgium. The pricing was expensive and unclear and I
-        accidentally unlocked an electric bike on my first
-        attempt without fully understanding the selection.
-        When it came time to finish my journey, I struggled
-        to locate a nearby station where I could return it.
-    </p>
-    <p class="body-text">
-        Having experienced how seamlessly cycling could fit
-        into everyday life abroad, I began questioning why
-        Dublin's equivalent felt so difficult to navigate.
-        Finding nearby stations, understanding bike options
-        and planning journeys should feel straightforward,
-        rather than introducing unnecessary friction into
-        an otherwise convenient and sustainable way to travel.
-    </p>
-<p class="body-text">
-    <strong>Our design brief:</strong> How might we design an intuitive iOS cycling companion that encourages sustainable urban mobility, improves access to Dublin's bike-sharing network, and supports the United Nations Sustainable Development Goals?
-</p>
-<p class="body-text">
-        This experience inspired Velora: an iOS cycling
-        companion designed to make Dublin's bike-sharing
-        network easier to understand and use. By bringing
-        station discovery, proximity-based search, journey
-        tracking and sustainability insights into one
-        intuitive interface, I wanted to create an experience
-        that encouraged more people to explore the city by bike.
-    </p>
-</article>
-<article class="case-study-section" id="research">
-    <h2 class="section-number-title">Research</h2>
-    <p class="body-text">
-        My research focused on exploring Dublin's existing
-        bike-sharing services and identifying opportunities
-        to improve the overall user experience. I looked at
-        RedClick DublinBikes specifically to understand how the service
-        presents station locations, bike availability and
-        rental options, using my own experience with the
-        system to inform the initial design direction.
-    </p>
-    <p class="body-text">
-        To put the project into context, I explored publicly
-        available cycling statistics and developed an initial
-        Figma mock-up to visualise how a more intuitive
-        cycling companion could work:
-    </p>
-    <iframe
-    class="veloraplaceholderImage"
-    style="border: 1px solid rgba(0, 0, 0, 0.1);"
-    width="800"
-    height="500"
-    src="https://embed.figma.com/proto/olJpR1vAzTurDPIVpO1s0M/Velora-Bike-App?node-id=906-2618&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=906%3A2504&embed-host=share"
-    allowfullscreen>
-</iframe>
-    <div class="stat-list">
-        <div class="stat-item">
-            <span class="stat-number">1.97M</span>
-            <span class="stat-text">
-                DublinBikes journeys were recorded in 2025,
-                highlighting the scale of the city's existing
-                public bike-sharing network.
-            </span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">34%</span>
-            <span class="stat-text">
-                of Dublin Metropolitan Area residents wanted
-                to cycle more in the future, according to the
-                2025 Walking and Cycling Index.
-            </span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">116</span>
-            <span class="stat-text">
-                stations serve the DublinBikes network, making
-                clear station discovery and accessible location
-                information important considerations for the
-                mobile experience.
-            </span>
-        </div>
-    </div>
-</article>
-<article class="case-study-section" id="solution">
-    <h2 class="section-number-title">Solution</h2>
-    <p class="body-text">
-        To address the frustration I experienced with Dublin's
-        bike-sharing platform, I developed Velora, a native
-        iOS cycling companion designed to make finding bikes,
-        navigating stations and tracking journeys more
-        intuitive. Combining a clean interface with station
-        discovery, personalised features and journey management,
-        the app aims to make cycling around Dublin feel more
-        accessible and straightforward.
-    </p>
-    <p class="body-text">
-        <strong>1. Interactive Map & Station Clustering:</strong>
-        The core experience centres around an interactive map
-        displaying nearby bike stations. I implemented MapKit
-        clustering to group stations when zoomed out, reducing
-        visual clutter and rendering overhead. As users zoom
-        in, clusters separate into individual station markers,
-        keeping the map readable while prioritising performance
-        as the volume of displayed data increases.
-    </p>
-    <p class="body-text">
-        <strong>2. Personalised Station Discovery:</strong>
-        Using CoreLocation, I designed a station search
-        experience that prioritises nearby locations, alongside
-        the ability to favourite stations for quicker access.
-        This allows users to keep track of preferred pickup
-        and return points without repeatedly searching the
-        entire network. Clear station information and floating
-        map controls further simplify navigation.
-    </p>
-    <p class="body-text">
-        <strong>3. Intuitive Journey Tracking:</strong>
-        I developed a custom swipe-to-unlock gesture for
-        starting journeys, creating a more deliberate
-        interaction than a standard tap button. The app also
-        tracks completed journeys and displays personal
-        cycling activity through a profile dashboard, including
-        estimated environmental savings. Together, these
-        features connect everyday journey management with
-        a broader focus on sustainable urban travel.
-    </p>
-    <p class="body-text">
-        Developed individually in <strong>Swift using
-        SwiftUI and UIKit</strong>, Velora combined interface
-        design in Figma with native iOS development. A key
-        technical focus was map performance and optimisation,
-        particularly managing station markers and location
-        updates to minimise unnecessary rendering and keep
-        interactions responsive. The result is a cycling
-        companion built around accessible navigation,
-        personalised discovery and a more engaging journey
-        experience.
-    </p>
+                <p class="body-text">
+                    Returning to Ireland, I was inspired to try Dublin's
+                    public bike-sharing system during a trip to Phoenix Park
+                    with a few friends. However, the experience felt considerably
+                    less intuitive than what I had grown accustomed to in
+                    Belgium. The pricing was expensive and unclear and I
+                    accidentally unlocked an electric bike on my first
+                    attempt without fully understanding the selection.
+                    When it came time to finish my journey, I struggled
+                    to locate a nearby station where I could return it.
+                </p>
+                <p class="body-text">
+                    Having experienced how seamlessly cycling could fit
+                    into everyday life abroad, I began questioning why
+                    Dublin's equivalent felt so difficult to navigate.
+                    Finding nearby stations, understanding bike options
+                    and planning journeys should feel straightforward,
+                    rather than introducing unnecessary friction into
+                    an otherwise convenient and sustainable way to travel.
+                </p>
+                <p class="body-text">
+                    <strong>Our design brief:</strong> How might we design an intuitive iOS cycling companion that
+                    encourages sustainable urban mobility, improves access to Dublin's bike-sharing network, and
+                    supports the United Nations Sustainable Development Goals?
+                </p>
+                <p class="body-text">
+                    This experience inspired Velora: an iOS cycling
+                    companion designed to make Dublin's bike-sharing
+                    network easier to understand and use. By bringing
+                    station discovery, proximity-based search, journey
+                    tracking and sustainability insights into one
+                    intuitive interface, I wanted to create an experience
+                    that encouraged more people to explore the city by bike.
+                </p>
+            </article>
+            <article class="case-study-section" id="research">
+                <h2 class="section-number-title">Research</h2>
+                <p class="body-text">
+                    My research focused on exploring Dublin's existing
+                    bike-sharing services and identifying opportunities
+                    to improve the overall user experience. I looked at
+                    RedClick DublinBikes specifically to understand how the service
+                    presents station locations, bike availability and
+                    rental options, using my own experience with the
+                    system to inform the initial design direction.
+                </p>
+                <p class="body-text">
+                    To put the project into context, I explored publicly
+                    available cycling statistics and developed an initial
+                    Figma mock-up to visualise how a more intuitive
+                    cycling companion could work:
+                </p>
+                <iframe class="veloraplaceholderImage" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"
+                    height="500"
+                    src="https://embed.figma.com/proto/olJpR1vAzTurDPIVpO1s0M/Velora-Bike-App?node-id=906-2618&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=906%3A2504&embed-host=share"
+                    allowfullscreen>
+                </iframe>
+                <div class="stat-list">
+                    <div class="stat-item">
+                        <span class="stat-number">1.97M</span>
+                        <span class="stat-text">
+                            DublinBikes journeys were recorded in 2025,
+                            highlighting the scale of the city's existing
+                            public bike-sharing network.
+                        </span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">34%</span>
+                        <span class="stat-text">
+                            of Dublin Metropolitan Area residents wanted
+                            to cycle more in the future, according to the
+                            2025 Walking and Cycling Index.
+                        </span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">116</span>
+                        <span class="stat-text">
+                            stations serve the DublinBikes network, making
+                            clear station discovery and accessible location
+                            information important considerations for the
+                            mobile experience.
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article class="case-study-section" id="solution">
+                <h2 class="section-number-title">Solution</h2>
+                <p class="body-text">
+                    To address the frustration I experienced with Dublin's
+                    bike-sharing platform, I developed Velora, a native
+                    iOS cycling companion designed to make finding bikes,
+                    navigating stations and tracking journeys more
+                    intuitive. Combining a clean interface with station
+                    discovery, personalised features and journey management,
+                    the app aims to make cycling around Dublin feel more
+                    accessible and straightforward.
+                </p>
+                <p class="body-text">
+                    <strong>1. Interactive Map & Station Clustering:</strong>
+                    The core experience centres around an interactive map
+                    displaying nearby bike stations. I implemented MapKit
+                    clustering to group stations when zoomed out, reducing
+                    visual clutter and rendering overhead. As users zoom
+                    in, clusters separate into individual station markers,
+                    keeping the map readable while prioritising performance
+                    as the volume of displayed data increases.
+                </p>
+                <p class="body-text">
+                    <strong>2. Personalised Station Discovery:</strong>
+                    Using CoreLocation, I designed a station search
+                    experience that prioritises nearby locations, alongside
+                    the ability to favourite stations for quicker access.
+                    This allows users to keep track of preferred pickup
+                    and return points without repeatedly searching the
+                    entire network. Clear station information and floating
+                    map controls further simplify navigation.
+                </p>
+                <p class="body-text">
+                    <strong>3. Intuitive Journey Tracking:</strong>
+                    I developed a custom swipe-to-unlock gesture for
+                    starting journeys, creating a more deliberate
+                    interaction than a standard tap button. The app also
+                    tracks completed journeys and displays personal
+                    cycling activity through a profile dashboard, including
+                    estimated environmental savings. Together, these
+                    features connect everyday journey management with
+                    a broader focus on sustainable urban travel.
+                </p>
+                <p class="body-text">
+                    Developed individually in <strong>Swift using
+                        SwiftUI and UIKit</strong>, Velora combined interface
+                    design in Figma with native iOS development. A key
+                    technical focus was map performance and optimisation,
+                    particularly managing station markers and location
+                    updates to minimise unnecessary rendering and keep
+                    interactions responsive. The result is a cycling
+                    companion built around accessible navigation,
+                    personalised discovery and a more engaging journey
+                    experience.
+                </p>
 
-    <a href="https://github.com/meghank1066/BikeCity_Dublin"
-       class="action-button"
-       target="_blank"
-       rel="noopener noreferrer">
-        View GitHub Repository &rarr;
-    </a>
-</article>
-<article class="case-study-section" id="reflection">
-    <h2 class="section-number-title">Reflection</h2>
-    <p class="body-text">
-        Upon reflection, developing a native iOS application
-        taught me how to balance technical performance with
-        intuitive user experiences. Working with interactive
-        maps, location-based functionality and station data
-        highlighted the importance of optimisation, particularly
-        when handling dense map markers and frequent updates.
-        If there was something I could improve or do differently,
-        I would prioritise prototyping and usability testing
-        earlier in the process, allowing me to gather feedback
-        on station discovery, favouriting and journey tracking
-        before committing to the final implementation.
-    </p>
-    <p class="body-text">
-        In the future, I would love to continue developing
-        Velora by refining journey planning, improving station
-        availability insights and expanding notifications
-        around completed rides. I would also explore further
-        accessibility testing and more detailed sustainability
-        metrics to help users understand the environmental
-        impact of their journeys. Overall, this project
-        strengthened my skills in Swift development, UI/UX
-        design and performance optimisation, while teaching
-        me how thoughtful design decisions can make everyday
-        technology more accessible and enjoyable to use.
-    </p>
-</article>
+                <a href="https://github.com/meghank1066/BikeCity_Dublin" class="action-button" target="_blank"
+                    rel="noopener noreferrer">
+                    View GitHub Repository &rarr;
+                </a>
+            </article>
+            <article class="case-study-section" id="reflection">
+                <h2 class="section-number-title">Reflection</h2>
+                <p class="body-text">
+                    Upon reflection, developing a native iOS application
+                    taught me how to balance technical performance with
+                    intuitive user experiences. Working with interactive
+                    maps, location-based functionality and station data
+                    highlighted the importance of optimisation, particularly
+                    when handling dense map markers and frequent updates.
+                    If there was something I could improve or do differently,
+                    I would prioritise prototyping and usability testing
+                    earlier in the process, allowing me to gather feedback
+                    on station discovery, favouriting and journey tracking
+                    before committing to the final implementation.
+                </p>
+                <p class="body-text">
+                    In the future, I would love to continue developing
+                    Velora by refining journey planning, improving station
+                    availability insights and expanding notifications
+                    around completed rides. I would also explore further
+                    accessibility testing and more detailed sustainability
+                    metrics to help users understand the environmental
+                    impact of their journeys. Overall, this project
+                    strengthened my skills in Swift development, UI/UX
+                    design and performance optimisation, while teaching
+                    me how thoughtful design decisions can make everyday
+                    technology more accessible and enjoyable to use.
+                </p>
+            </article>
             <footer class="footer">
                 <div class="footer-top">
                     <div class="footer-nav-left">
@@ -333,6 +336,21 @@
                 </div>
                 <div class="footer-bottom">
                     <p>&copy; 2026 Meghan Rose K. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom">
+                    <p>
+                        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS! for about.html" />
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                alt="Valid CSS! for about.html" />
+                        </a>
+                    </p>
                 </div>
             </footer>
         </div>
