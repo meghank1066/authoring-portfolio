@@ -12,6 +12,8 @@
   --background-color: #F7D6DD;
   --text: #2B2A1E;
   --ink: #1d1d1b;
+  --sand: rgb(0 0 0 / 8%);
+  --white-text: var(--ink);
   --serif: "Newsreader", georgia, "Times New Roman", serif;
   --mono: "IBM Plex Mono", ui-monospace, "SF Mono", menlo, monospace;
 }
@@ -534,6 +536,20 @@
   font-size: 1rem;
 }
 
+
+/* homepage fix */
+#previewSlot {
+  width: min(360px, 88vw);
+}
+
+#previewSlot .vcard {
+  width: 100%;
+}
+
+#previewSlot .sig {
+  pointer-events: auto;
+  cursor: crosshair;
+}
 
 /* media q */
 
