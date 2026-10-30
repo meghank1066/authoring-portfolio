@@ -195,6 +195,9 @@ let card = createVisitor();
 
 // asynchronous function to fetch all saved sightings from the backend api and render them
 async function loadCards() {
+
+  if (!gallery) return;
+
   try {
     const res = await fetch(API + '/api/sightings');
 
@@ -288,11 +291,13 @@ function openEditor() {
 }
 
 // wire up global editor button triggers and nickname input binding
-document.getElementById('openEditor').onclick = openEditor;
+const openBtn = document.getElementById('openEditor');
+if (openBtn) openBtn.onclick = openEditor;
 
 document.getElementById('back').onclick = () => {
   editor.classList.remove('open');
 };
+
 
 
 // generates another complete visitor
@@ -392,23 +397,18 @@ document.getElementById('save').onclick = async () => {
     }
 
     // endpoints return success without a response body.
-    if (!data) {
-      editor.classList.remove('open');
-      await loadCards();
-      return;
-    }
+        if (data?._id) localStorage.setItem('mySightingId', data._id);
 
-   if (data._id) {
-  localStorage.setItem('mySightingId', data._id);
-}
+    if (gallery && data) gallery.insertAdjacentHTML('afterbegin', cardHTML(data));
+    if (empty) empty.hidden = true;
 
-gallery.insertAdjacentHTML('afterbegin', cardHTML(data));
-    empty.hidden = true;
     editor.classList.remove('open');
+    if (!data) await loadCards();
 
   } catch (err) {
     errorBox.textContent = err.message;
     errorBox.hidden = false;
+    document.getElementById('back').hidden = false; // let them through if saving fails
   } finally {
     saveButton.disabled = false;
   }
@@ -416,7 +416,8 @@ gallery.insertAdjacentHTML('afterbegin', cardHTML(data));
 
 // start the gallery
 
-document.getElementById('deleteMine').onclick = async () => {
+const deleteBtn = document.getElementById('deleteMine');
+if (deleteBtn) deleteBtn.onclick = async () => {
   const id = localStorage.getItem('mySightingId');
 
   if (!id) {
@@ -480,3 +481,8 @@ document.addEventListener('mouseout', (event) => {
 });
 
 loadCards();
+
+if (document.body.hasAttribute('data-gate') && !localStorage.getItem('mySightingId')) {
+  document.getElementById('back').hidden = true;
+  openEditor();
+}
