@@ -488,10 +488,10 @@
 .swatch[data-color="pink"] {
   --c: var(--c-pink);
 }
-
+/* 
 .swatch[data-color="teal"] {
   --c: var(--c-teal);
-}
+} */
 
 
 .swatch.on {
