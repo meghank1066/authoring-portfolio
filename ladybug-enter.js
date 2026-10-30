@@ -141,8 +141,3 @@ if (lightbox && lightboxImg && closeBtn) {
 }
 });
 
-// // letshost secure detection ssl fix?
-// https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript
-if (window.location.protocol === 'http:') {
-    window.location.href = 'https://' + window.location.host + window.location.pathname + window.location.search;
-}
