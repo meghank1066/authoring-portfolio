@@ -482,7 +482,14 @@ document.addEventListener('mouseout', (event) => {
 
 loadCards();
 
+// for static
 if (document.body.hasAttribute('data-gate') && !localStorage.getItem('mySightingId')) {
   document.getElementById('back').hidden = true;
   openEditor();
 }
+
+//for non static version
+// if (document.body.hasAttribute('data-gate') && !localStorage.getItem('mySightingId')) {
+//   document.getElementById('back').hidden = true;
+//   openEditor();
+// }
