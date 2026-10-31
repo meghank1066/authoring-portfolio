@@ -293,4 +293,30 @@
     min-height: 480px;
     margin-top: 2rem;
   }
+
+   .stamp-blue {
+    width: 55px;
+    height: auto;
+    top: 0;
+    right: 5px;
+  }
+
+  .stamp-vintage {
+    width: 45px;
+    height: auto;
+    top: 15px;
+    right: 42px;
+  }
+
+  .stamps-group {
+    width: 90px;
+    height: 90px;
+    top: 205px;
+    right: 0;
+  }
+
+  .scrapbook-collage {
+    min-height: 480px;
+    margin-top: 2rem;
+  }
 }
