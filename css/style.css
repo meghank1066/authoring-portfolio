@@ -80,7 +80,6 @@ body {
 .sidebar-nav nav {
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
 }
 
 
@@ -99,15 +98,15 @@ body {
     cursor: pointer;
 }
 .sidebar-img {
-    width: 220px;
-    height: 165px;
+    width: 320px;
+    height: 265px;
     border-radius: 12px;
     object-fit: contain;
     object-position: center;
     display: block;
     margin-inline: auto;
     cursor: pointer;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .hero-img-container {
     background-color: var(--background-color);
