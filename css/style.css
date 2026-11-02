@@ -950,6 +950,17 @@ footer {
         margin-top: 0;
     }
 
+    .sidebar-img {
+    width: 220px;
+    height: 165px;
+    border-radius: 12px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin-inline: auto;
+    cursor: pointer;
+}
+
     .horizontal-crawl-container {
         display: none;
     }
