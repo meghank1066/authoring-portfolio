@@ -141,3 +141,38 @@ if (lightbox && lightboxImg && closeBtn) {
 }
 });
 
+// recruiter mode toggle ignore for assignment submission as its been added 16/11/12
+// grab both buttons from the sidebar
+const enterBtn = document.querySelector(".recruiter-button");
+const exitBtn = document.querySelector(".exit-recruiter-mode");
+
+// turns recruiter mode on or off
+// adds/removes the "recruiter-mode" class on body, which the css uses to swap the buttons
+function setRecruiterMode(on) {
+  document.body.classList.toggle("recruiter-mode", on);
+
+  // save the choice so it stays on after a refresh or on other pages
+  // (try/catch in case localStorage is blocked
+  try {
+    localStorage.setItem("recruiterMode", on ? "1" : "0");
+  } catch {}
+}
+
+// clicking recruiter mode turns it on, then moves focus to exit for keyboard users
+enterBtn?.addEventListener("click", () => {
+  setRecruiterMode(true);
+  exitBtn.focus();
+});
+
+// clicking exit turns it off then moves focus back to the recruiter button
+exitBtn?.addEventListener("click", () => {
+  setRecruiterMode(false);
+  enterBtn.focus();
+});
+
+// on page load, check if recruiter mode was left on last time and turn it back on :)
+try {
+  if (localStorage.getItem("recruiterMode") === "1") {
+    setRecruiterMode(true);
+  }
+} catch {}
