@@ -107,7 +107,7 @@ body {
     display: block;
     margin-inline: auto;
     cursor: pointer;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .hero-img-container {
@@ -265,6 +265,7 @@ body {
     gap: 2rem;
     padding: 1rem 0 0;
     border-top: 1px solid rgba(134, 18, 38, 0.18);
+    margin-top: 60px;
 }
 
 .sidebar-socials a {
@@ -911,7 +912,7 @@ footer {
 .recruiter-button {
     align-self: center;
     width: 100%;
-    max-width: 230px;
+    max-width: 250px;
     margin-top: 24px;
     padding: 14px 24px;
     font-family: "Space Mono", monospace;
@@ -956,11 +957,11 @@ footer {
     transition: background 0.2s, border-color 0.2s;
 }
 
-.exit-recruiter-mode:hover {
-    background: var(--text);
-    border-color: var(--text);
-}
 
+.exit-recruiter-mode:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+}
 .recruiter-button:focus-visible,
 .exit-recruiter-mode:focus-visible {
     outline: 2px solid var(--text);
@@ -974,6 +975,159 @@ body.recruiter-mode .recruiter-button {
 body.recruiter-mode .exit-recruiter-mode {
     display: block;
 }
+
+/* recruiter cv */
+
+.recruiter-cv {
+    display: none;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 16px 8px 64px;
+}
+
+body.recruiter-mode .recruiter-cv {
+    display: block;
+    animation: cv-in 0.4s ease;
+}
+
+/* hide the meadow stuff while recruiter mode is on */
+body.recruiter-mode .horizontal-crawl-container,
+body.recruiter-mode .hero-img-container,
+body.recruiter-mode .latest-bug-log,
+body.recruiter-mode .projects-grid {
+    display: none;
+}
+
+@keyframes cv-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cv-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.cv-links a {
+    font-family: "Space Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--accent);
+    padding: 8px 16px;
+    border: 1.5px solid var(--accent);
+    border-radius: 10px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.cv-links a:hover {
+    color: var(--card-bg);
+    background: var(--accent);
+}
+
+.cv-name {
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.cv-intro {
+    font-family: "Gelica";
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.cv-meta {
+    font-family: "Gelica";
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    color: var(--date);
+}
+
+.cv-label {
+    font-family: "Space Mono", monospace;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--date);
+    margin-top: 56px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(43, 42, 30, 0.15);
+}
+
+.cv-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cv-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(43, 42, 30, 0.1);
+}
+
+.cv-title {
+    font-size: 20px;
+}
+
+.cv-sub {
+    font-family: "Space Mono", monospace;
+    font-size: 13px;
+    margin-top: 4px;
+    opacity: 0.8;
+}
+
+.cv-date {
+    font-family: "Space Mono", monospace;
+    font-size: 13px;
+    color: var(--date);
+    white-space: nowrap;
+}
+
+/* selected work rows are links */
+.cv-work {
+    color: var(--text);
+    text-decoration: none;
+    transition: padding-left 0.2s, color 0.2s;
+}
+
+.cv-work:hover {
+    color: var(--accent);
+    padding-left: 8px;
+}
+
+.cv-work-title {
+    font-size: 28px;
+}
+
+.cv-tags {
+    font-family: "Space Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--date);
+    margin-top: 4px;
+}
+
+.cv-arrow {
+    font-family: "Space Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+
 
 /* responsive media queries */
 @media (max-width: 800px) {
@@ -1056,6 +1210,17 @@ body.recruiter-mode .exit-recruiter-mode {
     .metric-item {
         min-width: 0;
         overflow-wrap: anywhere;
+    }
+
+    /* recruiter add in 16/11/2026 */
+
+     .cv-row {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .cv-name {
+        font-size: 40px;
     }
 }
 
