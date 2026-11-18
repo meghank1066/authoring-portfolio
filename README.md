@@ -19,11 +19,17 @@ The site uses a ladybug and garden theme, inspired by a game analysis paper I wr
 <img width="298" height="218" alt="image" src="https://github.com/user-attachments/assets/7e9a47b2-b06f-49d1-8b39-99c93c6995cb" />
 
 - **Project case studies**: Velora, SPOREX, NexSpace and Nintendo
-<img width="3228" height="1628" alt="Screenshot 2026-11-18 at 11 45 16" src="https://github.com/user-attachments/assets/65e3fa82-4393-4185-a2eb-d9d366ba9d35" />
-<img width="3272" height="1622" alt="Screenshot 2026-11-18 at 11 45 22" src="https://github.com/user-attachments/assets/0a8df83c-d4fb-4d62-a4a2-06d3d3526ced" />
-<img width="3242" height="1628" alt="Screenshot 2026-11-18 at 11 45 40" src="https://github.com/user-attachments/assets/aca7fdac-ae42-4fce-b028-3bd47808005e" />
-<img width="3198" height="1614" alt="Screenshot 2026-11-18 at 11 45 52" src="https://github.com/user-attachments/assets/ec837164-5697-42b5-9885-0cbfa5470c5d" />
 
+<table>
+  <tr>
+    <td><img width="400" alt="Velora case study" src="https://github.com/user-attachments/assets/65e3fa82-4393-4185-a2eb-d9d366ba9d35" /></td>
+    <td><img width="400" alt="SPOREX case study" src="https://github.com/user-attachments/assets/0a8df83c-d4fb-4d62-a4a2-06d3d3526ced" /></td>
+  </tr>
+  <tr>
+    <td><img width="400" alt="NexSpace case study" src="https://github.com/user-attachments/assets/aca7fdac-ae42-4fce-b028-3bd47808005e" /></td>
+    <td><img width="400" alt="Nintendo case study" src="https://github.com/user-attachments/assets/ec837164-5697-42b5-9885-0cbfa5470c5d" /></td>
+  </tr>
+</table>
 
 ## Features
 
