@@ -10,8 +10,14 @@ The site uses a ladybug and garden theme, inspired by a game analysis paper I wr
 ## Pages
 
 - **Home**: introduction and project cards linking to each case study
+- <img width="277" height="203" alt="image" src="https://github.com/user-attachments/assets/5fc70a4d-0a5d-4c19-841a-1694b2993af9" />
+
 - **About**: a scrapbook-style page with a bit more about me
+- <img width="277" height="177" alt="image" src="https://github.com/user-attachments/assets/7990f579-b200-491d-8c16-b1ae28289441" />
+
 - **Ladybug Sightings**: a visitor log where visitors can leave their mark on the garden
+- <img width="298" height="218" alt="image" src="https://github.com/user-attachments/assets/7e9a47b2-b06f-49d1-8b39-99c93c6995cb" />
+
 - **Project case studies**: Velora, SPOREX, NexSpace and Nintendo
 
 ## Features
